@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formmularios HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios HTML - Ejemplos</h1>
+        <hr>
+    </header>
+    <main>
+        <h2>Formulario de registro</h2>
+        <p>Completa los siguientes datos:</p>
+        <form> <!-- Etiquieta para crear un Formulario -->
+            <label>Nombre:</label> <!-- Etiqueta que describe al Campo -->
+            <input type="text" name="nombre" placeholder="Ejemplo: John Zenin"> <!-- Campo de Texto -->
+            <br><br>
+            <label>Correo electronico:</label>
+            <input type="email" name="correo" placeholder="johnzenin@liceovvh.cl">
+            <br><br>
+            <label>Contraseña:</label>
+            <input type="password" name="password">
+            <br><br>
+            <label>Edad:</label>
+            <input type="number" name="edad">
+            <br><br>
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" name="fechaNac">
+            <br><br>
+            <label>Genero:</label>
+            <input type="radio" name="genero" value="masculino">
+            Masculino
+            <input type="radio" name="genero" valie="femenino">
+            Femenino
+            <input type="radio" name="genero" value="trans">
+            Trans
+            <input type="radio" name="genero" value="therian">
+            Therian
+            <input type="radio" name="genero" value="otro">
+            Otro
+            <br><br>
+            <label>Intereses:</label><br>
+            <input type="checkbox" name="intereses" value="musica">
+            Musica<br>
+            <input type="checkbox" name="intereses" value="deporte">
+            Deporte<br>
+            <input type="checkbox" name="intereses" value="peliculas">
+            Peliculas<br>
+            <input type="checkbox" name="intereses" value="Arte">
+            Arte
+            <br><br>
+            <label>Ciudad:</label>
+            <select name="ciudad">
+                <option>Santiago</option>
+                <option>Valparaiso</option>
+                <option>Viña del Mar</option>
+                <option>Coquimbo</option>
+                <option>La serena</option>
+                <option>Buin</option>
+                <option>Arica</option>
+                <option>Talca</option>
+                <option>Antofagasta</option>
+                <option>Estefanolandia</option>
+            </select>
+            <br><br>
+            <label>Comentarios:</label><br>
+            <textarea name="comentarios" rows="4" cols="30"></textarea>
+            <br><br>
+            <label>Subir archivo</label>
+            <input type="file" name="archivo">
+            <br><br>
+            <label>Color Favorito:</label><br>
+            <input type="color" name="color">
+            <br><br>
+            <label>Nivel de Satisfaccion</label><br>
+            <input type="rango" name="satisfaccion" min="1" max="7">
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpiar">
+        </form>
+        <h2>Tabla de Usuarios</h2>
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Edad</th>
+                <th>Genero</th>
+                <th>C. Fav.</th>
+            </tr>
+            <tr>
+                <td>Estefano</td>
+                <td>estefanopoblete@liceovvh.cl</td>
+                <td>16</td>
+                <td>Trans</td>
+                <td>Morado</td>
+            </tr>
+            <tr>
+                <td>Alan</td>
+                <td>alansepulveda@liceovvh.cl</td>
+                <td>16</td>
+                <td>Therian</td>
+                <td>Alan</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
