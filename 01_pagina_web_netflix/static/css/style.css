@@ -72,6 +72,10 @@ body {
     height: 100vh;
     width: 35%;
 }
+.main-text {
+    display: flex;
+    flex-direction: column;
+}
 .title-netflix {
     font-size: 49px;
     color: #fff;
